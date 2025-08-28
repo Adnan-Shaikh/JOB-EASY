@@ -37,16 +37,18 @@ const Home = () => {
         <h2>How JobEasy Works</h2>
         <div className="steps">
           <div className="step">
-            <h3>1. Search Nearby Jobs</h3>
-            <p>Find part-time roles around you.</p>
+            <h3>1. Create an Account </h3>
+            <p>Make an account Before Applying for jobs</p>
+            <button id="Apply" onClick={() => {navigate('/login');}}> Click Apply </button>
           </div>
           <div className="step">
             <h3>2. Apply Quickly</h3>
-            <p>Send applications in just a few taps.</p>
+            <p>Select available job as per your preference</p>
+            <button id="Apply" onClick={() => {navigate('/jobs');}}> Peak Jobs </button>
           </div>
-          <div className="step">
+          <div id="step3">
             <h3>3. Get Hired</h3>
-            <p>Receive offers and start working fast.</p>
+            <p>Start working fast.</p>
           </div>
         </div>
       </section>
