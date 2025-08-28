@@ -59,21 +59,6 @@ const Home = () => {
         <button onClick={() => window.location.href = '/post-job'}>Post a Job</button>
       </section>
 
-      <section className="featured-jobs">
-        <h2>Featured Jobs</h2>
-        <div className="job-card">
-          <h3>Barista - Cozy Cafe</h3>
-          <p>Location: Downtown</p>
-          <p>Part-time, Flexible hours</p>
-          <button>Apply Now</button>
-        </div>
-        <div className="job-card">
-          <h3>Retail Assistant - Local Shop</h3>
-          <p>Location: Main Street</p>
-          <p>Part-time, Weekends</p>
-          <button>Apply Now</button>
-        </div>
-      </section>
 
       <footer className="call-to-action">
         <button onClick={() => window.location.href = '/login'}>Job Seeker Login</button>
