@@ -5,8 +5,10 @@
   --color-pale-yellow: #FFEEA9;
 }
 
+
+
 .landing-container {
-  max-width: 960px;
+  
   margin: 0 auto;
   padding: 3rem 1.5rem;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,8 +19,58 @@
 }
 
 .hero {
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 3rem;
+}
+
+.parent{
+  display: flex;
+  justify-content: space-between;
+  /* background-color: black; */
+  margin: 50px;
+}
+.left_content{
+  display: flex;
+  width: 600px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* background-color: aqua; */
+}
+
+#landing_image{
+  width: 600px;
+  height: 400px;
+}
+
+.para{
+  margin-left: 50px;
+  /* color: aliceblue; */
+  
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+
+}
+
+#get_started_btn{
+  position: relative;
+  left: 100px;
+  top: -120px;
+  background-color: #7B4019;
+  color: #FFEEA9;
+  width: 150px;
+  height: 50px;
+  border-radius: 15px;
+  border-style: hidden;
+  font-size: large;
+  font-weight: 800;
 }
 
 .hero h1 {
@@ -28,46 +80,7 @@
   margin-bottom: 0.5rem;
 }
 
-.hero p {
-  font-size: 1.15rem;
-  color: #555;
-  margin-top: 0;
-}
 
-.search-bar {
-  display: inline-flex;
-  margin-top: 1.5rem;
-  width: 100%;
-  max-width: 400px;
-}
-
-.search-bar input {
-  flex-grow: 1;
-  padding: 0.55rem 1rem;
-  font-size: 1rem;
-  border: 2px solid var(--color-bright-orange);
-  border-radius: 6px 0 0 6px;
-  outline: none;
-}
-
-.search-bar input:focus {
-  border-color: var(--color-soft-orange);
-}
-
-.search-bar button {
-  background-color: var(--color-bright-orange);
-  border: none;
-  color: white;
-  padding: 0 1.6rem;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 0 6px 6px 0;
-  transition: background-color 0.3s;
-}
-
-.search-bar button:hover {
-  background-color: var(--color-soft-orange);
-}
 
 .how-it-works {
   margin-bottom: 3rem;
@@ -88,7 +101,7 @@
 }
 
 .step {
-  background: #fffcea;
+  background: #FF7D29;
   padding: 1.4rem 2rem;
   border-radius: 10px;
   flex: 1 1 250px;
@@ -98,6 +111,7 @@
 
 .step h3 {
   color: var(--color-dark-brown);
+  color: #fffcea;
   font-size: 1.3rem;
   margin-bottom: 0.6rem;
 }
@@ -231,3 +245,6 @@
     margin: 0.8rem auto;
   }
 }
+ 
+
+ 

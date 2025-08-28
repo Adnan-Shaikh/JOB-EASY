@@ -33,6 +33,7 @@
   padding: 0;
   gap: 1.2rem;
   flex-grow: 1;
+  margin-left: 22rem;
   align-items: center;
 }
 
@@ -91,3 +92,5 @@
     margin-top: 0.7rem;
   }
 }
+
+
