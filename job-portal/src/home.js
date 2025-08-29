@@ -1,10 +1,9 @@
-import React from 'react';
 import './home.css';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-  const navigate = useNavigate(); // <-- call hook here at top level
-
+  const navigate = useNavigate();
+   
   return (
     <div className="landing-container">
       <header className="hero">
@@ -78,6 +77,7 @@ const Home = () => {
     </div>
   </div>
 </section>
+
 
 
 
