@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="landing-container">
       <header className="hero">
-        <div className="parent">
+        <div className="parent_landing">
           <div className="child_left">
             <div className="left_content">
               <h1>Finding Part-Time Jobs Made Easy With JobEasy</h1>
@@ -32,7 +32,6 @@ const Home = () => {
         Get Started
       </button>
 
-      {/* The rest of your sections */}
       <section className="how-it-works">
         <h2>How JobEasy Works</h2>
         <div className="steps">
@@ -53,11 +52,33 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="employers">
-        <h2>Are You An Employer?</h2>
-        <p>Post your part-time openings easily and find the right candidates quickly.</p>
-        <button onClick={() => window.location.href = '/post-job'}>Post a Job</button>
-      </section>
+     <section className="employers">
+  <div className="parent_employer">
+    {/* LEFT: image */}
+    <div className="left_img">
+      {/* put your image in /public/assets and use that path */}
+      <img src="/NEEDAJOB.png" alt="Employers illustration" />
+    </div>
+
+    {/* RIGHT: content card */}
+    <div className="right_content">
+      <h2>Are You An Employer?</h2>
+      <p className="lead">
+        Post your part-time openings easily and find the right candidates quickly.
+      </p>
+      <ul className="benefits">
+        <li>Reach thousands of job seekers</li>
+        <li>Post jobs in under 2 minutes</li>
+        <li>Hire fast with JobEasy’s matching system</li>
+      </ul>
+
+      <button className="cta" onClick={() => navigate('/post-job')}>
+        Post a Job
+      </button>
+    </div>
+  </div>
+</section>
+
 
 
       <footer className="call-to-action">
