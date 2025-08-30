@@ -78,8 +78,9 @@ const Home = () => {
   </div>
 </section>
 
+<section className='feedback-Carousel'>
 
-
+</section>
 
       <footer className="call-to-action">
         <button onClick={() => window.location.href = '/login'}>Job Seeker Login</button>
