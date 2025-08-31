@@ -5,7 +5,7 @@ const Home = () => {
   const navigate = useNavigate();
    
   return (
-    <div className="landing-container">
+<div className="landing-container">
       <header className="hero">
         <div className="parent_landing">
           <div className="child_left">
@@ -53,13 +53,10 @@ const Home = () => {
 
      <section className="employers">
   <div className="parent_employer">
-    {/* LEFT: image */}
-    <div className="left_img">
-      {/* put your image in /public/assets and use that path */}
-      <img src="/NEEDAJOB.png" alt="Employers illustration" />
+      <div className="left_img">
+            <img src="/NEEDAJOB.png" alt="Employers illustration" />
     </div>
 
-    {/* RIGHT: content card */}
     <div className="right_content">
       <h2>Are You An Employer?</h2>
       <p className="lead">
@@ -78,59 +75,97 @@ const Home = () => {
   </div>
 </section>
 
-<section className="feedback-Carousel">
-  <h2>What Our Users Say</h2>
-  <div className="carousel">
-    <div className="carousel-track">
-      <div className="card">
-        <img src="/handsome-smiling-man-wearing-green-shirt-standing-against-blue-background.png" alt="Chetan" />
-        <h3>Chetan</h3>
-        <p>
-          JobEasy helped me land a part-time café job within 3 days. Super
-          simple process!
-        </p>
+  <section className="feedback-Carousel">
+    <h2>What Our Users Say</h2>
+    <div className="carousel">
+      <div className="carousel-track">
+        <div className="card">
+          <img src="/handsome-smiling-man-wearing-green-shirt-standing-against-blue-background.png" alt="Chetan" />
+          <h3>Chetan</h3>
+          <p>
+            JobEasy helped me land a part-time café job within 3 days. Super
+            simple process!
+          </p>
+        </div>
+        <div className="card">
+          <img src="/pexels-ketut-subiyanto-4307884.png" alt="Mohammad" />
+          <h3>Mohammad</h3>
+          <p>
+            Posting jobs as an employer is very smooth. Found the right candidate
+            quickly.
+          </p>
+        </div>
+        <div className="card">
+          <img src="/pexels-linzfrancis-3379613-removebg-preview.png" alt="Devanshoo" />
+          <h3>Devanshoo</h3>
+          <p>
+            Great experience! The matching system is spot on, saved me so much
+            time.
+          </p>
+        </div>
+        <div className="card">
+          <img src="smiling-caucasian-guy-with-beard-looking-happy.png" alt="Sai-raj" />
+          <h3>Sai-raj</h3>
+          <p>
+            I applied to 3 part-time jobs and got hired in less than a week!
+          </p>
+        </div>
+        <div className="card">
+          <img src="/young-bearded-man-with-striped-shirt_compress.png" alt="Palash" />
+          <h3>Palash</h3>
+          <p>
+            Highly recommend JobEasy for both employers and job seekers. Super
+            easy!
+          </p>
+        </div>
       </div>
-      <div className="card">
-        <img src="/pexels-ketut-subiyanto-4307884.png" alt="Mohammad" />
-        <h3>Mohammad</h3>
-        <p>
-          Posting jobs as an employer is very smooth. Found the right candidate
-          quickly.
-        </p>
+    </div>
+        </section>
+
+
+      <footer className="footer">
+  <div className="footer-top">
+    <div className="footer-logo">
+      <h2>JobEasy</h2>
+    </div>
+
+    <div className="footer-links">
+      <div className="footer-column">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="/team">Team</a></li>
+          
+        </ul>
       </div>
-      <div className="card">
-        <img src="/pexels-linzfrancis-3379613-removebg-preview.png" alt="Devanshoo" />
-        <h3>Devanshoo</h3>
-        <p>
-          Great experience! The matching system is spot on, saved me so much
-          time.
-        </p>
+
+      <div className="footer-column">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
       </div>
-      <div className="card">
-        <img src="smiling-caucasian-guy-with-beard-looking-happy.png" alt="Sai-raj" />
-        <h3>Sai-raj</h3>
-        <p>
-          I applied to 3 part-time jobs and got hired in less than a week!
-        </p>
-      </div>
-      <div className="card">
-        <img src="/young-bearded-man-with-striped-shirt_compress.png" alt="Palash" />
-        <h3>Palash</h3>
-        <p>
-          Highly recommend JobEasy for both employers and job seekers. Super
-          easy!
-        </p>
+
+      <div className="footer-column">
+        <h3>Social</h3>
+        <ul>
+          <li><a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+        </ul>
       </div>
     </div>
   </div>
-</section>
 
+  <div className="footer-bottom">
+    <p>Copyright © JobEasy</p>
+    <p><a href="/terms">Terms of Service</a></p>
+    <p className="back-to-top">
+      <a href="#top">Back to top ⬆</a>
+    </p>
+  </div>
+</footer>
 
-      <footer className="call-to-action">
-        <button onClick={() => window.location.href = '/login'}>Job Seeker Login</button>
-        <button onClick={() => window.location.href = '/login'}>Employer Login</button>
-      </footer>
-    </div>
+</div>
   );
 };
 
