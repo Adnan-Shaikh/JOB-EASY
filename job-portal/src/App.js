@@ -7,6 +7,7 @@ import FindJobs from './findjobs';
 import PostJob from './postjobs';
 // import EmployeeProfile from './profile';
 import Login from './login';
+import Signup from './signup';
 import Team from './team';
 import Terms from './terms';
 
@@ -21,6 +22,7 @@ function App() {
         <Route path="/post-job" element={<PostJob />} />
         {/* <Route path="/profile" element={<EmployeeProfile />} /> */}
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
         <Route path='/team' element={<Team/>}/>
         <Route path='/terms' element={<Terms/>}/>
         {/* Optional: Add a fallback 404 page route */}

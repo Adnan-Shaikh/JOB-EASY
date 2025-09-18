@@ -1,3 +1,17 @@
+/* :root {
+  --color-dark-brown: #7B4019;
+  --color-bright-orange: #FF7D29;
+  --color-soft-orange: #FFBF78;
+  --color-pale-yellow: #FFEEA9;
+}
+
+.Form-container{
+  width: 100%;
+}
+
+.Box{
+
+} */
 :root {
   --color-dark-brown: #7B4019;
   --color-bright-orange: #FF7D29;
@@ -5,64 +19,73 @@
   --color-pale-yellow: #FFEEA9;
 }
 
-.auth-container {
-  max-width: 400px;
-  margin: 60px auto;
+.Form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.Box {
   background: var(--color-pale-yellow);
-  padding: 2.5rem 3rem;
+  padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 5px 18px rgba(123, 64, 25, 0.2);
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
   color: var(--color-dark-brown);
+  margin-bottom: 1rem;
 }
 
-.auth-container h2 {
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.auth-form input {
-  width: 100%;
-  padding: 0.85rem 1rem;
-  margin-bottom: 15px;
-  border-radius: 8px;
-  border: 2px solid var(--color-soft-orange);
+.input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
   font-size: 1rem;
   outline: none;
-  transition: border-color 0.25s;
 }
 
-.auth-form input:focus {
+.input:focus {
   border-color: var(--color-bright-orange);
+  box-shadow: 0px 0px 4px rgba(255, 125, 41, 0.5);
 }
 
-.auth-form button {
-  background-color: var(--color-bright-orange);
-  color: white;
-  font-weight: 700;
-  font-size: 1.1rem;
+.login-btn {
+  background: var(--color-bright-orange);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem;
   border: none;
-  border-radius: 10px;
-  padding: 0.85rem 0;
-  width: 100%;
+  border-radius: 8px;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.auth-form button:hover {
-  background-color: var(--color-soft-orange);
+.login-btn:hover {
+  background: #ff6a00;
 }
 
-.auth-toggle {
-  margin-top: 20px;
-  font-size: 0.95rem;
-  color: var(--color-dark-brown);
+.signup-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
 }
 
-.auth-toggle span {
+.signup-text a {
   color: var(--color-bright-orange);
-  cursor: pointer;
-  font-weight: 700;
-  margin-left: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
 }
