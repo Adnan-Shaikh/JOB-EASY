@@ -1,20 +1,23 @@
 const express = require("express");
-const paths = require("path");
-const bcrypt = require("bcryptjs");
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
-app.set("view engine",'ejs');
 
-app.get("/",(req,res)=>{
-    res.render("login");
-});
+// Middleware to parse JSON
+app.use(express.json());
 
-app.get("/",(req,res)=>{
-    res.render("signup");
-});
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => {
+    console.log("✅ MongoDB connected");
+    // Start server only after DB connects
+    app.listen(process.env.PORT, () => {
+      console.log(`🚀 Server running on port ${process.env.PORT}`);
+    });
+  })
+  .catch((err) => {
+    console.error("❌ MongoDB connection error:", err);
+  });
 
-
-const port = 5000;
-app.listen(port,()=>{
-    console.log('Server running on port', port);
-});
