@@ -12,6 +12,16 @@ app.use(express.json());
 const authRoutes = require("./routes/auth");
 app.use("/api/auth", authRoutes);
 
+// Protected routes
+const auth = require("./middleware/auth");
+app.get("/api/profile", auth, (req, res) => {
+  res.json({
+    message: "This is a protected route",
+    user: req.user, // JWT payload
+  });
+});
+
+
 mongoose.connect(process.env.MONGO_URI)
   .then(() => {
     console.log("✅ MongoDB connected");
