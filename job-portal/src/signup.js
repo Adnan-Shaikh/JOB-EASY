@@ -60,7 +60,8 @@ const Signupform = () => {
         email,
         password,
       });
-      setMessage(res.data.message);
+      localStorage.setItem('token', res.data.token);
+      navigate('/jobs');
     } catch (err) {
       setMessage(err.response?.data?.message || 'Error occurred');
     }
