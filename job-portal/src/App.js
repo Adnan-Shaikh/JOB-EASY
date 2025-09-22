@@ -10,6 +10,7 @@ import Login from './login';
 import Signup from './signup';
 import Team from './team';
 import Terms from './terms';
+import protectedroutes from "./ProtectedRoute"
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/terms' element={<Terms/>}/>
         {/* Optional: Add a fallback 404 page route */}
         <Route path="*" element={<div><h1>Page Not Found</h1></div>} />
+        <Route path="/jobs" element={ <ProtectedRoute> <FindJobs /> </ProtectedRoute> }/>
       </Routes>
     </Router>
   );
