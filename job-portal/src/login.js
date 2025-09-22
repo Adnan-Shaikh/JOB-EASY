@@ -40,8 +40,8 @@ const Loginform = () => {
         password,
       });
 
-      localStorage.setItem('token', res.data.token);
-    navigate('/jobs');
+      localStorage.setItem('token', res.data.token); // save JWT
+      setMessage('Login successful!');
     } catch (err) {
       setMessage(err.response?.data?.message || 'Error occurred');
     }
