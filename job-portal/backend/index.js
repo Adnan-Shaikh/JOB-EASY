@@ -18,7 +18,9 @@ app.use(cors({
 }));
 
 const authRoutes = require("./routes/auth");
+const jobRoutes = require('./routes/jobsposting');
 app.use("/api/auth", authRoutes);
+app.use('/api/jobsposting', jobRoutes);
 
 // Protected routes
 const auth = require("./middleware/auth");
