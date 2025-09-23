@@ -25,12 +25,14 @@
 
 import './login.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Loginform = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleLogin = async (e) => {
     e.preventDefault(); // prevent default HTML form submission
@@ -41,7 +43,8 @@ const Loginform = () => {
       });
 
       localStorage.setItem('token', res.data.token); // save JWT
-      setMessage('Login successful!');
+      alert('Login successful!');
+      navigate("/jobs")
     } catch (err) {
       setMessage(err.response?.data?.message || 'Error occurred');
     }

@@ -44,9 +44,11 @@
 
 import './login.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const Signupform = () => {
+  const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -60,7 +62,8 @@ const Signupform = () => {
         email,
         password,
       });
-      setMessage(res.data.message);
+      alert(res.data.message);
+      navigate("/jobs")
     } catch (err) {
       setMessage(err.response?.data?.message || 'Error occurred');
     }
