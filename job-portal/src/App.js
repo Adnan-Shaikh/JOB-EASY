@@ -5,7 +5,7 @@ import Navbar from './navbar';
 import Home from './home';
 import FindJobs from './findjobs';
 import PostJob from './postjobs';
-// import EmployeeProfile from './profile';
+import EmployeeProfile from './profile';
 import Login from './login';
 import Signup from './signup';
 import Team from './team';
@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/jobs" element={<FindJobs />} />
         <Route path="/post-job" element={<PostJob />} />
-        {/* <Route path="/profile" element={<EmployeeProfile />} /> */}
+        <Route path="/profile" element={<EmployeeProfile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path='/team' element={<Team/>}/>
