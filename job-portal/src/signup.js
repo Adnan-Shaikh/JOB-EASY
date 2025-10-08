@@ -63,7 +63,7 @@ const Signupform = () => {
         password,
       });
       alert(res.data.message);
-      navigate("/jobs")
+      navigate("/login")
     } catch (err) {
       setMessage(err.response?.data?.message || 'Error occurred');
     }
