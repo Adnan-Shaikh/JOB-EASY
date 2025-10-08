@@ -14,6 +14,15 @@ router.post('/', async (req, res) => {
   }
 });
 
+router.get('/', async (req, res) => {
+  try {
+    const jobs = await Job.find().sort({ postedAt: -1 }); // fetch all jobs, newest first
+    res.json(jobs);
+  } catch (error) {
+    res.status(500).json({ message: 'Failed to fetch jobs', error: error.message });
+  }
+});
+
 // (Later we'll add a GET route for fetching all jobs)
 
 module.exports = router;
