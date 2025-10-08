@@ -19,22 +19,33 @@ const PostJob = () => {
   };
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const res = await axios.post("http://localhost:5000/api/jobsposting", form);
-      alert("Job posted successfully!");
-      setForm({
-        title: "",
-        company: "",
-        location: "",
-        type: "",
-        salary: "",
-        description: ""
-      });
-    } catch (err) {
-      alert("Failed to post job.");
-    }
-  };
+  e.preventDefault();
+  try {
+    const token = localStorage.getItem('token'); // get token from localStorage
+    const res = await axios.post(
+      "http://localhost:5000/api/jobsposting",
+      form,
+      {
+        headers: {
+          Authorization: `Bearer ${token}`, // pass token in headers
+        },
+      }
+    );
+    alert("Job posted successfully!");
+    setForm({
+      title: "",
+      company: "",
+      location: "",
+      type: "",
+      salary: "",
+      description: "",
+    });
+  } catch (err) {
+    alert("Failed to post job.");
+    console.error(err.response?.data || err.message);
+  }
+};
+
 
   return (
     <div className="post-job-container">

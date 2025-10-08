@@ -7,6 +7,11 @@ const JobSchema = new mongoose.Schema({
   type: { type: String, required: true }, // eg: "Full-time" or "Part-time"
   salary: { type: String }, // optional
   description: { type: String, required: true },
+  postedBy: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User',
+    required: true
+  },
   postedAt: { type: Date, default: Date.now }
 });
 

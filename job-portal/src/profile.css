@@ -1,0 +1,57 @@
+.profile-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 2rem;
+  background-color: #fff9f3;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(123, 64, 25, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #7B4019; /* Dark Brown */
+}
+
+.profile-container h1 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  border-bottom: 2px solid #FF7D29; /* Bright Orange */
+  padding-bottom: 0.5rem;
+}
+
+.profile-container p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.profile-container p strong {
+  color: #FF7D29; /* Bright Orange for labels */
+}
+.profile-signout-btn {
+  margin-top: 2rem;
+  background: #FF7D29;
+  color: #fff;
+  border: none;
+  padding: 0.7em 2em;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(123, 64, 25, 0.07);
+  transition: background 0.2s;
+}
+
+.profile-signout-btn:hover {
+  background: #7B4019;
+}
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5em 1em;
+  margin-top: 0.5em;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.delete-btn:hover {
+  background-color: #b30000;
+}
