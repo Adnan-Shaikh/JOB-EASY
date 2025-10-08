@@ -55,3 +55,50 @@
 .delete-btn:hover {
   background-color: #b30000;
 }
+.feedback-form {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #fffbf3;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(255, 125, 41, 0.15);
+  max-width: 600px;
+}
+
+.feedback-form h2 {
+  color: #7b4019;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 8px;
+  border: 1.5px solid #ff7d29;
+  font-size: 1rem;
+  resize: vertical;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feedback-form button {
+  background-color: #ff7d29;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.8rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.feedback-form button:hover {
+  background-color: #7b4019;
+}
+
+.feedback-form p {
+  margin-top: 0.8rem;
+  font-weight: 600;
+  color: #7b4019;
+}
