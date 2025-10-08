@@ -3,10 +3,11 @@ import "./home.css";
 
 const Team = () => {
   const members = [
-    { name: "Adnan Shaikh", role: "Founder, Front end Developer", img: "/Adnan.png" },
-    { name: "Mohammad Memon", role: "Nalla bimaar Aadmi", img: "/pexels-linzfrancis-3379613-removebg-preview.png" },
-    { name: "Rahul Gupta", role: "Kaam Chor Media Team", img: "/Rahul.png" },
-    { name: "Chetan Khamkar", role: "Legal Advisor", img: "/khamkar.png" },
+    { name: "Adnan Shaikh", role: "CEO and Developer", img: "/Adnan.png" },
+    { name: "Mohammad Memon", role: "Co-Founder and AI engineer", img: "/Mohammad.jpg" },
+    { name: "Rahul Gupta", role: "Dalal Media Team", img: "/Rahul.png" },
+    { name: "Sairaj Pavnak", role: "AI support", img: "/Sairaj.jpg" },
+    { name: "Chetan Khamkar", role: "Lode ka Legal Advisor", img: "/khamkar.png" },
   ];
 
   return (
